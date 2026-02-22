@@ -235,7 +235,7 @@ def run_pipeline(args: argparse.Namespace) -> None:
     if args.skip_plots:
         print("Skipping generation of volcano and MA plots (per flag).")
     else:
-        import rnaseq_utils
+        from . import _rnaseq_utils as rnaseq_utils
         rnaseq_utils.make_volcano_MA_plots_from_nf_deseq_output_dir(
         output_dir,
         file_sufix='.deseq2.results.csv',
