@@ -2,17 +2,17 @@
 """Post-process nf-core/differentialabundance outputs via rnaseq_utils helpers.
 example usage ran from repo_root/scripts/ directory:
 python post_process_nfcore_differentialabundance.py \
-    --nfcore-rnaseq-dir ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/nfcore_outputs/rnaseq/results \
-    --nfcore-da-dir ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/nfcore_outputs/differentialabundance/results \
-    --h2m-map-file ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/data/h2m_agg.csv \
-    --m2h-map-file ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/data/m2h_agg.csv \
+    --nfcore-rnaseq-dir ~/projects/gitbenlewis/nfcore_outputs/rnaseq/results \
+    --nfcore-da-dir ~/projects/gitbenlewis/nfcore_outputs/differentialabundance/results \
+    --h2m-map-file ~/projects/gitbenlewis/data/h2m_agg.csv \
+    --m2h-map-file ~/projects/gitbenlewis/data/m2h_agg.csv \
     --organism human    
 verbose example usage with all options:
 python post_process_nfcore_differentialabundance.py \
-    --nfcore-rnaseq-dir ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/nfcore_outputs/rnaseq/results \
-    --nfcore-da-dir ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/nfcore_outputs/differentialabundance/results \
-    --h2m-map-file ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/data/h2m_agg.csv \
-    --m2h-map-file ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/data/m2h_agg.csv \
+    --nfcore-rnaseq-dir ~/projects/gitbenlewis/nfcore_outputs/rnaseq/results \
+    --nfcore-da-dir ~/projects/gitbenlewis/nfcore_outputs/differentialabundance/results \
+    --h2m-map-file ~/projects/gitbenlewis/data/h2m_agg.csv \
+    --m2h-map-file ~/projects/gitbenlewis/data/m2h_agg.csv \
     --raw-table-suffix .deseq2.results.tsv \
     --raw-table-separator '\t' \
     --processed-table-suffix .deseq2.results.csv \
@@ -257,16 +257,16 @@ if __name__ == "__main__":
 # ---------------------------------------------------------------------
 # Example usage:
 # python scripts/post_process_nfcore_differentialabundance.py \
-#   --nfcore-rnaseq-dir ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/nfcore_outputs/rnaseq/results \
-#   --nfcore-da-dir ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/nfcore_outputs/differentialabundance/results \
+#   --nfcore-rnaseq-dir ~/projects/gitbenlewis/nfcore_outputs/rnaseq/results \
+#   --nfcore-da-dir ~/projects/gitbenlewis/nfcore_outputs/differentialabundance/results \
 #   --organism human
 # ---------------------------------------------------------------------
 # Verbose usage:
 # python scripts/post_process_nfcore_differentialabundance.py \
-#   --nfcore-rnaseq-dir ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/nfcore_outputs/rnaseq/results \
-#   --nfcore-da-dir ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/nfcore_outputs/differentialabundance/results \
-#   --h2m-map-file ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/data/h2m_agg.csv \
-#   --m2h-map-file ~/projects/gitbenlewis/private_TRPV4_JHU_RNAseq_Bagnell_etal/data/m2h_agg.csv \
+#   --nfcore-rnaseq-dir ~/projects/gitbenlewis/nfcore_outputs/rnaseq/results \
+#   --nfcore-da-dir ~/projects/gitbenlewis/nfcore_outputs/differentialabundance/results \
+#   --h2m-map-file ~/projects/gitbenlewis/data/h2m_agg.csv \
+#   --m2h-map-file ~/projects/gitbenlewis/data/m2h_agg.csv \
 #   --raw-table-suffix .deseq2.results.tsv \
 #   --raw-table-separator $'\\t' \
 #   --processed-table-suffix .deseq2.results.csv \
